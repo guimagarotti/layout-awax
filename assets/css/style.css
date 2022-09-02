@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    overflow-x: hidden;
+}
+
+/*Cabeçalho*/
+header {
+    height: 100px;
+    background-color: #000;
+    color: #FFF;
+}
+.header-content {
+    max-width: 1140px;
+    height: 100px;
+    background-color: #000;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 100px;
+}
+.logoimg {
+    width: 80px;
+    height: 80px;
+    background-color: #B28756;
+    border-radius: 50%;
+}
+.menu {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+.menu ul, .menu li {
+    list-style: none;
+}
+.menu ul {
+    display: flex;
+}
+.menu li a {
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    height: 100px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 5px solid #000;
+}
+
+.menu li a:hover, .menu .active a {
+    border-bottom: 5px solid #B28756;
+    color: #CCC;
+}
+
+.main-banner {
+    height: calc(100vh - 100px);
+    background-color: #CCC;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    overflow: hidden;
+}
+.main-banner .carousels {
+    width: 100vw;
+    height: 100%;
+}
+.main-banner .carousel {
+    width: 100vw;
+    height: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.carousel .carousel-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+}
+.carousel-content h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.carousel-content h1 span {
+    color: #B28756;
+}
+.carousel-content h2 {
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.carousel-content a {
+    text-transform: uppercase;
+    background-color: #B28756;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 30px;
+    padding: 10px 40px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.carousels-pointers {
+    width: 100vw;
+    height: 20px;
+    position: absolute;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousels-pointers .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #B28756;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.pointer.active {
+    background-color: #B28756;
+}
+
+/*Section Padrão*/
+.section-default {
+    padding: 50px 0;
+}
+.section-default .section-title {
+    font-size: 20px;
+}
+.section-default .section-subtitle {
+    font-size: 12px;
+    color: #CCC;
+    margin: 12px 0 40px 0;
+}
+.section-default .section-title, .section-default .section-subtitle {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.section-default .section-body {
+    max-width: 1140px;
+    margin: auto;
+}
+
+/*Definições Default*/
+.section-default.light {
+    background-color: #F7F7F7;
+}
+.section-default.light .section-title, .section-default.light .section-body  {
+    color: #000
+}
+
+.section-default.dark {
+    background-color: #000;
+}
+.section-default.dark .section-title, .section-default.dark .section-body {
+    color: #FFF;
+}
+.button {
+    text-transform: uppercase;
+    background-color: #B28756;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 30px;
+    padding: 10px 40px;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/*Main - About Us*/
+.aboutUs {
+    display: flex;
+}
+.aboutUs--left {
+    flex: 1;
+}
+.aboutUs--left p {
+    font-size: 14px;
+    line-height: 25px;
+}
+.aboutUs--right {
+    width: 520px;
+    text-align: center;
+}
+.aboutUs--right img {
+    width: 520px;
+    box-shadow: 2px 5px 10px #333;
+}
+
+/*Main - Services*/
+.services {
+    display: flex;
+    padding: 15px;
+}
+.services-item {
+    flex: 1;
+    text-align: center;
+    border-left: 2px solid #333;
+}
+.services-item:nth-child(4) {
+    border-right: 2px solid #333;
+}
+.services-item h4 {
+    margin-top: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.services-item p {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #999;
+}
+
+/*Main - Projects*/
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projects--filter {
+    border: 1px solid #CCC;
+    background-color: #EEE;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 0 25px;    
+}
+.projects--filter ul, .projects--filter li {
+    list-style: none;
+    text-decoration: none;
+}
+.projects--filter li {
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: inline-block;
+    color: #555;
+    border-left: 1px solid #CCC;
+    border-bottom: 3px solid #EEE;
+    cursor: pointer;
+}
+.projects--filter li:first-child {
+    border-left: 0;
+}
+.projects--filter li:hover, .projects--filter .active {
+    border-bottom: 3px solid #B28756;
+}
+
+.projects--photos {
+    width: 100vw;
+    max-width: 1140px;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.projects--photos .photo {
+    width: 280px;
+}
+
+.photo .photoarea {
+    margin: 10px;
+    width: 260px;
+    height: 160px;
+}
+.photoarea img {
+    width: 260px;
+    height: 160px;
+}
+.photoarea .photoinfo {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: inherit;
+    height: inherit;
+    color: #FFF;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.photoinfo h3 {
+    font-size: 18px;
+    font-weight: 550;
+}
+.photoarea:hover .photoinfo {
+    display: flex;    
+}
+
+
+
