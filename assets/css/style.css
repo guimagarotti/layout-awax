@@ -302,5 +302,90 @@ header {
     display: flex;    
 }
 
+/*Section - Our Team*/
+.bg-photo {
+    background-image: url('../images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+}
+.section-team-area {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 50px 0;
+}
+.section-team {
+    width: 880px;
+    overflow: hidden;
+    margin: auto;
+}
+.section-team-area .carousels {
+    width: 100vw;
+    height: 100%;
+}
+.section-team-area .carousel {
+    width: 280px;
+    margin-right: 20px;
+    height: 100%;
+    min-height: 300px;
+    display: inline-block;
+    background-color: #FFF;
+    padding: 30px;
+}
+.section-team-area .carousel-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+}
+.team-carousels-pointers {
+    margin-top: 40px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team-carousels-pointers .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #B28756;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.pointer.active {
+    background-color: #B28756;
+}
+.section-team .team-photo {
+    width: 150px;
+}
+.section-team .team-name {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+.section-team .team-occup {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #999;
+}
+.section-team .team-social {
+    display: flex;
+    margin-top: 25px;
+}
+.team-social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #999;
+    width: 5px;
+    height: 5px;
+}
+.team-social a img {
+    width: 12px;
+    height: 12px;
+}
 
 
