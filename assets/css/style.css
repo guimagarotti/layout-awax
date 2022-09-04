@@ -357,35 +357,143 @@ header {
 .pointer.active {
     background-color: #B28756;
 }
-.section-team .team-photo {
+.carousel-content .team-photo {
     width: 150px;
+    height: auto;
 }
-.section-team .team-name {
+.carousel-content .team-name {
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
     margin-top: 30px;
 }
-.section-team .team-occup {
+.carousel-content .team-occup {
     font-size: 12px;
     margin-top: 5px;
     color: #999;
 }
-.section-team .team-social {
+.carousel-content .team-social {
     display: flex;
-    margin-top: 25px;
+    margin-top: 20px;
 }
-.team-social a {
-    display: inline-flex;
+.team-social p {
+    display: flex;
+    width: 25px;
+    border-radius: 50%;
+    height: 25px;
+    margin-right: 10px;
+    background-color: #999;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #999;
-    width: 5px;
-    height: 5px;
+    cursor: pointer;
 }
-.team-social a img {
-    width: 12px;
-    height: 12px;
+.team-social p:hover {
+    background-color: #B28756;
 }
 
+/*Section - Happy Clients*/
+.bg-gray {
+    background-color: rgb(240, 238, 238);    
+}
+.happy-clients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(240, 238, 238); 
+}
+.happy-clients .client-photo {
+    width: 130px;
+    height: auto;
+}
+.happy-clients .client-name {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.happy-clients .client-occup {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+.happy-clients .client-quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.client-quote img {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.client-quote p {
+    line-height: 25px;
+    width: 790px;
+    text-align: center;
+}
 
+/*Section - Parcerias*/
+.with-border {
+    border-top: 1.5px solid #999;    
+    border-bottom: 1.5px solid #999;    
+}
+.logo-empresas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.logo-empresas img {
+    margin-right: 80px;
+}
+.logo-empresas img:last-child {
+    margin-right: 0;
+}
+
+/*Section - Price*/
+.price {
+    width: 1140px;
+}
+.banners-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.banner-price {
+    width: 265px;
+    padding: 20px;
+    margin-right: 20px;
+    background-color: #FFF;
+    display: block;
+    text-align: center;
+}
+.banner-price .price-name {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.banner-price .price-value {
+    margin: 10px 0 0 0;
+    font-weight: 700;
+    font-size: 26px;
+}
+.banner-price .month {
+    text-transform: uppercase;
+    color: #999;
+    font-size: 11px;
+    margin-bottom: 30px;
+}
+.banner-price .button {
+    background-color: #333;
+}
+.banner-price .button a {
+    text-decoration: none;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.banner-price .button:hover, .banner-price .active {
+    background-color: #B28756;
+}
