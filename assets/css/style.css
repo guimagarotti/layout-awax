@@ -499,4 +499,114 @@ header {
 }
 
 /*Section - Plan Premium*/
+.plan-premium {
+    display: flex;
+    max-width: initial;
+    align-items: center;
+    border-bottom: 1.5px solid #CCC;
+    padding-bottom: 30px;
+}
+.plan-premium--left {
+    flex: 1;
+    text-align: right;
+}
+.plan-premium--left img {
+    width: 300px;
+    margin-right: 30px;
+}
+.plan-premium--right {
+    flex: 1;
+}
+.feature {
+    margin-left: 30px;
+}
+.feature .feature-title {
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    align-items: center;
+}
+.feature .feature-title img {
+    margin-right: 20px;
+}
+.feature .feature-subtitle p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #999;
+    margin-left: 55px;
+}
+.button-premium {
+    display: inline-block;
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px 40px;
+    border-radius: 20px;
+    background-color: #B28756;
+}
+.button-premium a {
+    color: #FFF;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
 
+/*Section - Some Facts*/
+.section-facts {
+    display: flex;
+    padding: 10px 15px 15px 15px;
+}
+.banner-fact {
+    flex: 1;
+    text-align: center;
+}
+.banner-fact p {
+    width: 10px;
+    color: #555;
+    font-weight: bold;
+}
+.fact-number {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+    color: #B28756;
+    text-transform: uppercase;
+}
+.fact-title {
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+}
+.fact-description {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #999;
+}
+#obs {
+    padding-top: 7px;
+}
+
+/*Section - Contact*/
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact-share {
+    display: flex;
+    align-items: center;
+}
+.contact-share p {
+    margin-left: 15px;
+    font-weight: 14px;
+    text-transform: uppercase;
+    color: #999;
+    font-weight: 700;
+}
+.contact-social {
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+}
