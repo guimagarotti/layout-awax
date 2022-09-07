@@ -724,3 +724,13 @@ input::placeholder {
 }
 
 /*Footer*/
+.section-footer--area {
+    display: flex;
+}
+.footer--social {
+    display: flex;
+}
+.copy {
+    display: block;
+}
+
