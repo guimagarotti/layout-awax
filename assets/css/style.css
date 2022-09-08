@@ -34,6 +34,9 @@ header {
     background-color: #B28756;
     border-radius: 50%;
 }
+.menu-opener {
+    display: none;
+}
 .menu {
     display: flex;
     flex: 1;
@@ -314,7 +317,7 @@ header {
     padding: 50px 0;
 }
 .section-team {
-    width: 880px;
+    max-width: 880px;
     overflow: hidden;
     margin: auto;
 }
@@ -729,8 +732,191 @@ input::placeholder {
 }
 .footer--social {
     display: flex;
+    flex: 1;
+}
+.footer--info {
+    width: 450px;
+    line-height: 23px;
+    color: #999;
+    margin-right: 20px;
+}
+.footer--subscribe {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+}
+.footer--subscribe input[type="email"] {
+    outline: 0;
+    border: 0;
+    border-bottom: 2px solid #CCC;
+    background-color: #333;
+    margin-left: 25px;
+    padding: 15px 20px;
+}
+.footer--subscribe input::placeholder {
+    color: #999;
+    text-align: center;
+    font-weight: 500;
+    
+}
+.button.footer {
+    padding: 20px 60px;
+    border-radius: 25px;
 }
 .copy {
-    display: block;
+    font-size: 15px;
+    font-weight: 550;
+    text-transform: uppercase;
+    margin-top: -25px;
 }
+
+
+/*Responsividade*/
+@media (max-width: 800px) and (min-width: 450px) {
+    /*Header + Menu*/
+    nav {
+        display: none;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 70vw;
+        height: calc(100vh - 100px);
+        top: 100px;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu li a {
+        font-weight: bold;
+        height: 40px;
+        font-size: 18px;
+        margin-left: 50px;
+        border: 0;
+    }
+    .menu .active a {
+        color: #B28756;
+        border: 0;
+    }
+    .menu-opener {
+        width: 40px;
+        display: block;
+        margin-right: 25px;
+    }
+    .logoimg {
+        margin-left: 25px;
+    }
+
+    /*About Us*/
+    .aboutUs {
+        flex-direction: column;
+    }
+    .aboutUs--left {
+        margin: 0 30px 30px 30px
+    }
+    .aboutUs--right {
+        margin: auto;
+    }
+
+    /*Services*/
+    .services {
+        flex-wrap: wrap;
+    }
+    .services-item {
+        min-width: 50%;
+        border: 0;
+    }
+    .services-item:nth-child(1) {
+        border-right: 2px solid #333;
+    }
+    .services-item:nth-child(3) {
+        border-right: 2px solid #333;
+    }
+    .services-item:nth-child(3), .services-item:nth-child(4) {
+        padding-top: 15px;
+    }
+    .services-item:nth-child(4) {
+        border: 0;
+    }
+    .services-item #spacing {
+        margin-top: 8px;
+    }
+    .services-item #space {
+        margin-top: 17px;
+    }
+
+    /*Our Team*/
+    .section-team {
+        max-width: 580px;
+    }
+    .carousel:nth-child(3) {
+        display: none;
+    }
+
+    /*Happy Clients*/
+    .client-quote p {
+        width: 650px;
+        margin-top: 10px;
+    }
+
+    /*Parceiros*/
+    .logo-empresas img {
+        margin-right: 35px;
+        width: 85px;
+        height: auto;
+    }
+    .logo-empresas img:last-child {
+        margin-right: 0;
+    }
+
+    /*Price*/
+    .price {
+        max-width: 790px;
+    }
+    .banner-price:nth-child(2), .banner-price:nth-child(3) {
+        display: none;
+    }
+
+    /*Map*/
+    .section-map {
+        padding: 30px;
+        overflow: hidden;
+    }
+    .map-area {
+        width: auto;
+    }
+    .map-area--content {
+        width: auto;
+    }
+    .map-area--info {
+        margin-bottom: 10px;
+    }
+    .map-area--info:last-child {
+        margin-bottom: 0;
+    }
+
+    /*Footer*/
+    .section-footer--area {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer--info {
+        margin: 25px 0;
+        width: 680px;
+        text-align: center;
+    }
+    .footer--subscribe {
+        padding: 25px;
+    }
+    .button.footer {
+        padding: 15px 60px;
+        margin-bottom: 10px;
+    }
+    .copy {
+        display: none;
+    }
+}
+
 
